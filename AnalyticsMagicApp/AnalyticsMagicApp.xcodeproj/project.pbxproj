@@ -1,0 +1,813 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B611080D1C19CFC600CD4538 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B611080C1C19CFC600CD4538 /* AppDelegate.swift */; };
+		B611080F1C19CFC600CD4538 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B611080E1C19CFC600CD4538 /* ViewController.swift */; };
+		B61108121C19CFC600CD4538 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B61108101C19CFC600CD4538 /* Main.storyboard */; };
+		B61108141C19CFC600CD4538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B61108131C19CFC600CD4538 /* Assets.xcassets */; };
+		B61108171C19CFC600CD4538 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B61108151C19CFC600CD4538 /* LaunchScreen.storyboard */; };
+		B61108221C19CFC700CD4538 /* AnalyticsMagicAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61108211C19CFC700CD4538 /* AnalyticsMagicAppTests.swift */; };
+		B611082D1C19CFC700CD4538 /* AnalyticsMagicAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B611082C1C19CFC700CD4538 /* AnalyticsMagicAppUITests.swift */; };
+		B611083E1C19D0CB00CD4538 /* libFlurry_7.3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B611083D1C19D0CB00CD4538 /* libFlurry_7.3.0.a */; };
+		B61108421C19D13200CD4538 /* App-Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = B61108411C19D13200CD4538 /* App-Bridging-Header.m */; };
+		B61108441C19DFEA00CD4538 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61108431C19DFEA00CD4538 /* SystemConfiguration.framework */; };
+		B611084B1C19E3CB00CD4538 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B61108491C19E3CB00CD4538 /* Interface.storyboard */; };
+		B611084D1C19E3CB00CD4538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B611084C1C19E3CB00CD4538 /* Assets.xcassets */; };
+		B61108541C19E3CB00CD4538 /* AnalyticsWatchExample Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B61108531C19E3CB00CD4538 /* AnalyticsWatchExample Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B611085B1C19E3CB00CD4538 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B611085A1C19E3CB00CD4538 /* InterfaceController.swift */; };
+		B611085D1C19E3CB00CD4538 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B611085C1C19E3CB00CD4538 /* ExtensionDelegate.swift */; };
+		B611085F1C19E3CB00CD4538 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B611085E1C19E3CB00CD4538 /* NotificationController.swift */; };
+		B61108611C19E3CB00CD4538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B61108601C19E3CB00CD4538 /* Assets.xcassets */; };
+		B61108651C19E3CB00CD4538 /* AnalyticsWatchExample.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B61108471C19E3CB00CD4538 /* AnalyticsWatchExample.app */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B611081E1C19CFC700CD4538 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B61108011C19CFC600CD4538 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B61108081C19CFC600CD4538;
+			remoteInfo = AnalyticsMagicApp;
+		};
+		B61108291C19CFC700CD4538 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B61108011C19CFC600CD4538 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B61108081C19CFC600CD4538;
+			remoteInfo = AnalyticsMagicApp;
+		};
+		B61108551C19E3CB00CD4538 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B61108011C19CFC600CD4538 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B61108521C19E3CB00CD4538;
+			remoteInfo = "AnalyticsWatchExample Extension";
+		};
+		B61108631C19E3CB00CD4538 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B61108011C19CFC600CD4538 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B61108461C19E3CB00CD4538;
+			remoteInfo = AnalyticsWatchExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B61108691C19E3CB00CD4538 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B61108541C19E3CB00CD4538 /* AnalyticsWatchExample Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B611086D1C19E3CB00CD4538 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B61108651C19E3CB00CD4538 /* AnalyticsWatchExample.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B61108091C19CFC600CD4538 /* AnalyticsMagicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnalyticsMagicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B611080C1C19CFC600CD4538 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B611080E1C19CFC600CD4538 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B61108111C19CFC600CD4538 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B61108131C19CFC600CD4538 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B61108161C19CFC600CD4538 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B61108181C19CFC600CD4538 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B611081D1C19CFC700CD4538 /* AnalyticsMagicAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnalyticsMagicAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B61108211C19CFC700CD4538 /* AnalyticsMagicAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsMagicAppTests.swift; sourceTree = "<group>"; };
+		B61108231C19CFC700CD4538 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B61108281C19CFC700CD4538 /* AnalyticsMagicAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnalyticsMagicAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B611082C1C19CFC700CD4538 /* AnalyticsMagicAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsMagicAppUITests.swift; sourceTree = "<group>"; };
+		B611082E1C19CFC700CD4538 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B611083B1C19D0CB00CD4538 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		B611083C1C19D0CB00CD4538 /* FlurryWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryWatch.h; sourceTree = "<group>"; };
+		B611083D1C19D0CB00CD4538 /* libFlurry_7.3.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_7.3.0.a; sourceTree = "<group>"; };
+		B611083F1C19D13200CD4538 /* AnalyticsMagicApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AnalyticsMagicApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		B61108401C19D13200CD4538 /* App-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "App-Bridging-Header.h"; sourceTree = "<group>"; };
+		B61108411C19D13200CD4538 /* App-Bridging-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "App-Bridging-Header.m"; sourceTree = "<group>"; };
+		B61108431C19DFEA00CD4538 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B61108471C19E3CB00CD4538 /* AnalyticsWatchExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnalyticsWatchExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B611084A1C19E3CB00CD4538 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B611084C1C19E3CB00CD4538 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B611084E1C19E3CB00CD4538 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B61108531C19E3CB00CD4538 /* AnalyticsWatchExample Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "AnalyticsWatchExample Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B61108591C19E3CB00CD4538 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B611085A1C19E3CB00CD4538 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		B611085C1C19E3CB00CD4538 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		B611085E1C19E3CB00CD4538 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		B61108601C19E3CB00CD4538 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B61108621C19E3CB00CD4538 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B61108061C19CFC600CD4538 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B61108441C19DFEA00CD4538 /* SystemConfiguration.framework in Frameworks */,
+				B611083E1C19D0CB00CD4538 /* libFlurry_7.3.0.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B611081A1C19CFC700CD4538 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B61108251C19CFC700CD4538 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B61108501C19E3CB00CD4538 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B61108001C19CFC600CD4538 = {
+			isa = PBXGroup;
+			children = (
+				B61108431C19DFEA00CD4538 /* SystemConfiguration.framework */,
+				B611080B1C19CFC600CD4538 /* AnalyticsMagicApp */,
+				B61108201C19CFC700CD4538 /* AnalyticsMagicAppTests */,
+				B611082B1C19CFC700CD4538 /* AnalyticsMagicAppUITests */,
+				B61108481C19E3CB00CD4538 /* AnalyticsWatchExample */,
+				B61108571C19E3CB00CD4538 /* AnalyticsWatchExample Extension */,
+				B611080A1C19CFC600CD4538 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B611080A1C19CFC600CD4538 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B61108091C19CFC600CD4538 /* AnalyticsMagicApp.app */,
+				B611081D1C19CFC700CD4538 /* AnalyticsMagicAppTests.xctest */,
+				B61108281C19CFC700CD4538 /* AnalyticsMagicAppUITests.xctest */,
+				B61108471C19E3CB00CD4538 /* AnalyticsWatchExample.app */,
+				B61108531C19E3CB00CD4538 /* AnalyticsWatchExample Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B611080B1C19CFC600CD4538 /* AnalyticsMagicApp */ = {
+			isa = PBXGroup;
+			children = (
+				B611083A1C19D05C00CD4538 /* Flurry Analytics */,
+				B611080C1C19CFC600CD4538 /* AppDelegate.swift */,
+				B611080E1C19CFC600CD4538 /* ViewController.swift */,
+				B61108101C19CFC600CD4538 /* Main.storyboard */,
+				B61108131C19CFC600CD4538 /* Assets.xcassets */,
+				B61108151C19CFC600CD4538 /* LaunchScreen.storyboard */,
+				B61108181C19CFC600CD4538 /* Info.plist */,
+				B61108401C19D13200CD4538 /* App-Bridging-Header.h */,
+				B61108411C19D13200CD4538 /* App-Bridging-Header.m */,
+				B611083F1C19D13200CD4538 /* AnalyticsMagicApp-Bridging-Header.h */,
+			);
+			path = AnalyticsMagicApp;
+			sourceTree = "<group>";
+		};
+		B61108201C19CFC700CD4538 /* AnalyticsMagicAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				B61108211C19CFC700CD4538 /* AnalyticsMagicAppTests.swift */,
+				B61108231C19CFC700CD4538 /* Info.plist */,
+			);
+			path = AnalyticsMagicAppTests;
+			sourceTree = "<group>";
+		};
+		B611082B1C19CFC700CD4538 /* AnalyticsMagicAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B611082C1C19CFC700CD4538 /* AnalyticsMagicAppUITests.swift */,
+				B611082E1C19CFC700CD4538 /* Info.plist */,
+			);
+			path = AnalyticsMagicAppUITests;
+			sourceTree = "<group>";
+		};
+		B611083A1C19D05C00CD4538 /* Flurry Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				B611083B1C19D0CB00CD4538 /* Flurry.h */,
+				B611083C1C19D0CB00CD4538 /* FlurryWatch.h */,
+				B611083D1C19D0CB00CD4538 /* libFlurry_7.3.0.a */,
+			);
+			name = "Flurry Analytics";
+			sourceTree = "<group>";
+		};
+		B61108481C19E3CB00CD4538 /* AnalyticsWatchExample */ = {
+			isa = PBXGroup;
+			children = (
+				B61108491C19E3CB00CD4538 /* Interface.storyboard */,
+				B611084C1C19E3CB00CD4538 /* Assets.xcassets */,
+				B611084E1C19E3CB00CD4538 /* Info.plist */,
+			);
+			path = AnalyticsWatchExample;
+			sourceTree = "<group>";
+		};
+		B61108571C19E3CB00CD4538 /* AnalyticsWatchExample Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B611085A1C19E3CB00CD4538 /* InterfaceController.swift */,
+				B611085C1C19E3CB00CD4538 /* ExtensionDelegate.swift */,
+				B611085E1C19E3CB00CD4538 /* NotificationController.swift */,
+				B61108601C19E3CB00CD4538 /* Assets.xcassets */,
+				B61108621C19E3CB00CD4538 /* Info.plist */,
+				B61108581C19E3CB00CD4538 /* Supporting Files */,
+			);
+			path = "AnalyticsWatchExample Extension";
+			sourceTree = "<group>";
+		};
+		B61108581C19E3CB00CD4538 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B61108591C19E3CB00CD4538 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B61108081C19CFC600CD4538 /* AnalyticsMagicApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B61108311C19CFC700CD4538 /* Build configuration list for PBXNativeTarget "AnalyticsMagicApp" */;
+			buildPhases = (
+				B61108051C19CFC600CD4538 /* Sources */,
+				B61108061C19CFC600CD4538 /* Frameworks */,
+				B61108071C19CFC600CD4538 /* Resources */,
+				B611086D1C19E3CB00CD4538 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B61108641C19E3CB00CD4538 /* PBXTargetDependency */,
+			);
+			name = AnalyticsMagicApp;
+			productName = AnalyticsMagicApp;
+			productReference = B61108091C19CFC600CD4538 /* AnalyticsMagicApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B611081C1C19CFC700CD4538 /* AnalyticsMagicAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B61108341C19CFC700CD4538 /* Build configuration list for PBXNativeTarget "AnalyticsMagicAppTests" */;
+			buildPhases = (
+				B61108191C19CFC700CD4538 /* Sources */,
+				B611081A1C19CFC700CD4538 /* Frameworks */,
+				B611081B1C19CFC700CD4538 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B611081F1C19CFC700CD4538 /* PBXTargetDependency */,
+			);
+			name = AnalyticsMagicAppTests;
+			productName = AnalyticsMagicAppTests;
+			productReference = B611081D1C19CFC700CD4538 /* AnalyticsMagicAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B61108271C19CFC700CD4538 /* AnalyticsMagicAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B61108371C19CFC700CD4538 /* Build configuration list for PBXNativeTarget "AnalyticsMagicAppUITests" */;
+			buildPhases = (
+				B61108241C19CFC700CD4538 /* Sources */,
+				B61108251C19CFC700CD4538 /* Frameworks */,
+				B61108261C19CFC700CD4538 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B611082A1C19CFC700CD4538 /* PBXTargetDependency */,
+			);
+			name = AnalyticsMagicAppUITests;
+			productName = AnalyticsMagicAppUITests;
+			productReference = B61108281C19CFC700CD4538 /* AnalyticsMagicAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		B61108461C19E3CB00CD4538 /* AnalyticsWatchExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B611086A1C19E3CB00CD4538 /* Build configuration list for PBXNativeTarget "AnalyticsWatchExample" */;
+			buildPhases = (
+				B61108451C19E3CB00CD4538 /* Resources */,
+				B61108691C19E3CB00CD4538 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B61108561C19E3CB00CD4538 /* PBXTargetDependency */,
+			);
+			name = AnalyticsWatchExample;
+			productName = AnalyticsWatchExample;
+			productReference = B61108471C19E3CB00CD4538 /* AnalyticsWatchExample.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		B61108521C19E3CB00CD4538 /* AnalyticsWatchExample Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B61108661C19E3CB00CD4538 /* Build configuration list for PBXNativeTarget "AnalyticsWatchExample Extension" */;
+			buildPhases = (
+				B611084F1C19E3CB00CD4538 /* Sources */,
+				B61108501C19E3CB00CD4538 /* Frameworks */,
+				B61108511C19E3CB00CD4538 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AnalyticsWatchExample Extension";
+			productName = "AnalyticsWatchExample Extension";
+			productReference = B61108531C19E3CB00CD4538 /* AnalyticsWatchExample Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B61108011C19CFC600CD4538 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = HConnery;
+				TargetAttributes = {
+					B61108081C19CFC600CD4538 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					B611081C1C19CFC700CD4538 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = B61108081C19CFC600CD4538;
+					};
+					B61108271C19CFC700CD4538 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = B61108081C19CFC600CD4538;
+					};
+					B61108461C19E3CB00CD4538 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					B61108521C19E3CB00CD4538 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = B61108041C19CFC600CD4538 /* Build configuration list for PBXProject "AnalyticsMagicApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B61108001C19CFC600CD4538;
+			productRefGroup = B611080A1C19CFC600CD4538 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B61108081C19CFC600CD4538 /* AnalyticsMagicApp */,
+				B611081C1C19CFC700CD4538 /* AnalyticsMagicAppTests */,
+				B61108271C19CFC700CD4538 /* AnalyticsMagicAppUITests */,
+				B61108461C19E3CB00CD4538 /* AnalyticsWatchExample */,
+				B61108521C19E3CB00CD4538 /* AnalyticsWatchExample Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B61108071C19CFC600CD4538 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B61108171C19CFC600CD4538 /* LaunchScreen.storyboard in Resources */,
+				B61108141C19CFC600CD4538 /* Assets.xcassets in Resources */,
+				B61108121C19CFC600CD4538 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B611081B1C19CFC700CD4538 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B61108261C19CFC700CD4538 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B61108451C19E3CB00CD4538 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B611084D1C19E3CB00CD4538 /* Assets.xcassets in Resources */,
+				B611084B1C19E3CB00CD4538 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B61108511C19E3CB00CD4538 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B61108611C19E3CB00CD4538 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B61108051C19CFC600CD4538 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B61108421C19D13200CD4538 /* App-Bridging-Header.m in Sources */,
+				B611080F1C19CFC600CD4538 /* ViewController.swift in Sources */,
+				B611080D1C19CFC600CD4538 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B61108191C19CFC700CD4538 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B61108221C19CFC700CD4538 /* AnalyticsMagicAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B61108241C19CFC700CD4538 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B611082D1C19CFC700CD4538 /* AnalyticsMagicAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B611084F1C19E3CB00CD4538 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B611085F1C19E3CB00CD4538 /* NotificationController.swift in Sources */,
+				B611085D1C19E3CB00CD4538 /* ExtensionDelegate.swift in Sources */,
+				B611085B1C19E3CB00CD4538 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B611081F1C19CFC700CD4538 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B61108081C19CFC600CD4538 /* AnalyticsMagicApp */;
+			targetProxy = B611081E1C19CFC700CD4538 /* PBXContainerItemProxy */;
+		};
+		B611082A1C19CFC700CD4538 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B61108081C19CFC600CD4538 /* AnalyticsMagicApp */;
+			targetProxy = B61108291C19CFC700CD4538 /* PBXContainerItemProxy */;
+		};
+		B61108561C19E3CB00CD4538 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B61108521C19E3CB00CD4538 /* AnalyticsWatchExample Extension */;
+			targetProxy = B61108551C19E3CB00CD4538 /* PBXContainerItemProxy */;
+		};
+		B61108641C19E3CB00CD4538 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B61108461C19E3CB00CD4538 /* AnalyticsWatchExample */;
+			targetProxy = B61108631C19E3CB00CD4538 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B61108101C19CFC600CD4538 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B61108111C19CFC600CD4538 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B61108151C19CFC600CD4538 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B61108161C19CFC600CD4538 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B61108491C19E3CB00CD4538 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B611084A1C19E3CB00CD4538 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B611082F1C19CFC700CD4538 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B61108301C19CFC700CD4538 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B61108321C19CFC700CD4538 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = AnalyticsMagicApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AnalyticsMagicApp",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hconnery.AnalyticsMagicApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AnalyticsMagicApp/AnalyticsMagicApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B61108331C19CFC700CD4538 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = AnalyticsMagicApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AnalyticsMagicApp",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hconnery.AnalyticsMagicApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AnalyticsMagicApp/AnalyticsMagicApp-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		B61108351C19CFC700CD4538 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AnalyticsMagicAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hconnery.AnalyticsMagicAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnalyticsMagicApp.app/AnalyticsMagicApp";
+			};
+			name = Debug;
+		};
+		B61108361C19CFC700CD4538 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AnalyticsMagicAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hconnery.AnalyticsMagicAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnalyticsMagicApp.app/AnalyticsMagicApp";
+			};
+			name = Release;
+		};
+		B61108381C19CFC700CD4538 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AnalyticsMagicAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hconnery.AnalyticsMagicAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AnalyticsMagicApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B61108391C19CFC700CD4538 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AnalyticsMagicAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hconnery.AnalyticsMagicAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AnalyticsMagicApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		B61108671C19E3CB00CD4538 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "AnalyticsWatchExample Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hconnery.AnalyticsMagicApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		B61108681C19E3CB00CD4538 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "AnalyticsWatchExample Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hconnery.AnalyticsMagicApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		B611086B1C19E3CB00CD4538 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = AnalyticsWatchExample_Extension;
+				INFOPLIST_FILE = AnalyticsWatchExample/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hconnery.AnalyticsMagicApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		B611086C1C19E3CB00CD4538 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = AnalyticsWatchExample_Extension;
+				INFOPLIST_FILE = AnalyticsWatchExample/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hconnery.AnalyticsMagicApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B61108041C19CFC600CD4538 /* Build configuration list for PBXProject "AnalyticsMagicApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B611082F1C19CFC700CD4538 /* Debug */,
+				B61108301C19CFC700CD4538 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B61108311C19CFC700CD4538 /* Build configuration list for PBXNativeTarget "AnalyticsMagicApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B61108321C19CFC700CD4538 /* Debug */,
+				B61108331C19CFC700CD4538 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B61108341C19CFC700CD4538 /* Build configuration list for PBXNativeTarget "AnalyticsMagicAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B61108351C19CFC700CD4538 /* Debug */,
+				B61108361C19CFC700CD4538 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B61108371C19CFC700CD4538 /* Build configuration list for PBXNativeTarget "AnalyticsMagicAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B61108381C19CFC700CD4538 /* Debug */,
+				B61108391C19CFC700CD4538 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B61108661C19E3CB00CD4538 /* Build configuration list for PBXNativeTarget "AnalyticsWatchExample Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B61108671C19E3CB00CD4538 /* Debug */,
+				B61108681C19E3CB00CD4538 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B611086A1C19E3CB00CD4538 /* Build configuration list for PBXNativeTarget "AnalyticsWatchExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B611086B1C19E3CB00CD4538 /* Debug */,
+				B611086C1C19E3CB00CD4538 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B61108011C19CFC600CD4538 /* Project object */;
+}

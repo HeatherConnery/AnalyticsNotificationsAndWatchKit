@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9019"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="1l1-nd-cjQ">
+            <objects>
+                <controller id="n2V-qo-cY2">
+                    <items>
+                        <label alignment="left" text="Modally Presented from First" id="5Va-lz-EAR"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="116"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="AnalyticsWatchExample" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="First Page" id="UKm-q6-lic"/>
+                        <button width="1" alignment="left" title="Modal Present" id="t2H-0P-qVu">
+                            <connections>
+                                <segue destination="n2V-qo-cY2" kind="modal" id="iI0-bL-o6R"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <segue destination="5kh-Ut-LWw" kind="relationship" relationship="nextPage" id="Bwa-s6-54F"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="zPV-3u-NZy">
+            <objects>
+                <controller id="5kh-Ut-LWw">
+                    <items>
+                        <label alignment="left" text="Second Page" id="rLv-eD-mhs"/>
+                        <button width="1" alignment="left" title="Drill Down" id="4a6-Tw-p1a"/>
+                    </items>
+                    <connections>
+                        <segue destination="ZUg-8h-pKA" kind="relationship" relationship="nextPage" id="U3Q-FN-e0l"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="442" y="346"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="AnalyticsWatchExample" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="Ppq-yH-rbp">
+            <objects>
+                <controller id="ZUg-8h-pKA">
+                    <items>
+                        <label alignment="left" text="Third Page" id="msu-Ok-CFK"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="627" y="346"/>
+        </scene>
+    </scenes>
+</document>
